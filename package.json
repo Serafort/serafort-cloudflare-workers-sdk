@@ -2,6 +2,7 @@
   "name": "@serafort/cloudflare-workers",
   "version": "0.1.0",
   "type": "module",
+  "packageManager": "pnpm@10.32.1",
   "description": "Cloudflare Workers middleware, KV token caching, edge tenant routing, and local JWKS validation for Serafort IAM.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -21,10 +22,11 @@
   "scripts": {
     "build": "tsup",
     "type-check": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prepare": "husky"
   },
   "dependencies": {
-    "@serafort/core": "link:../Javascript"
+    "@serafort/core": "github:Serafort/serafort-javascript-sdk#5a4964fc41f08754c174d29b4af73074df17a9df"
   },
   "peerDependencies": {
     "@cloudflare/workers-types": ">=4.20240000.0"
@@ -36,8 +38,14 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250214.0",
+    "husky": "^9.1.7",
     "tsup": "^8.3.5",
     "typescript": "^5.7.0",
     "vitest": "^2.1.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@serafort/core"
+    ]
   }
 }

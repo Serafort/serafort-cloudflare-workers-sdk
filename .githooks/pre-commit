@@ -1,0 +1,10 @@
+#!/bin/sh
+# Portable pre-commit hook for contributors who don't use Husky (e.g. non-npm
+# tooling, or opting out of the `pnpm install`-triggered hook install).
+#
+# Enable with:
+#   git config core.hooksPath .githooks
+#
+# This runs the same checks as .husky/pre-commit.
+
+pnpm run type-check

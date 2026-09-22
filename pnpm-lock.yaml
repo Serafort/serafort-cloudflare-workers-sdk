@@ -9,12 +9,15 @@ importers:
   .:
     dependencies:
       '@serafort/core':
-        specifier: link:../Javascript
-        version: link:../Javascript
+        specifier: github:Serafort/serafort-javascript-sdk#5a4964fc41f08754c174d29b4af73074df17a9df
+        version: https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20250214.0
         version: 4.20260702.1
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       tsup:
         specifier: ^8.3.5
         version: 8.5.1(postcss@8.5.28)(typescript@5.9.3)
@@ -482,6 +485,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@serafort/core@https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df':
+    resolution: {tarball: https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df}
+    version: 0.1.0
+
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
 
@@ -608,6 +615,11 @@ packages:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   joycon@3.1.1:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
@@ -1101,6 +1113,8 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.63.4':
     optional: true
 
+  '@serafort/core@https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df': {}
+
   '@types/estree@1.0.9': {}
 
   '@vitest/expect@2.1.9':
@@ -1257,6 +1271,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  husky@9.1.7: {}
 
   joycon@3.1.1: {}
 
