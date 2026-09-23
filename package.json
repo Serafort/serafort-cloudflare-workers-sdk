@@ -26,7 +26,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@serafort/core": "github:Serafort/serafort-javascript-sdk#5a4964fc41f08754c174d29b4af73074df17a9df"
+    "@serafort/core": "^0.1.0"
   },
   "peerDependencies": {
     "@cloudflare/workers-types": ">=4.20240000.0"
